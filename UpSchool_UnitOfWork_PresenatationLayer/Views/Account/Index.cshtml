@@ -1,0 +1,22 @@
+﻿@model AccountViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div class=" container">
+    <br />
+    <form method="post">
+        <label>Gönderici ID </label>
+        <input type="text" asp-for="SenderId" class="form-control" />
+        <br />
+        <label>Alıcı ID </label>
+        <input type="text" asp-for="ReceiverId" class="form-control" />
+        <br />
+        <label> Tutar </label>
+        <input type="text" asp-for="Amount" class="form-control" />
+        <br />
+        <button class="btn btn-success"> Gönder</button>
+    </form>
+</div>
